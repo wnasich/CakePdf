@@ -46,7 +46,7 @@ class PdfView extends View {
  * @param Controller $controller
  * @return void
  */
-	public function __construct(Controller $Controller = null) {
+	public function __construct(?Controller $Controller = null) {
 		$this->_passedVars[] = 'pdfConfig';
 		parent::__construct($Controller);
 		$this->pdfConfig = array_merge(
